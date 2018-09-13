@@ -12,6 +12,7 @@ class SignUpStep2Activity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up_step2)
+        supportActionBar?.title = "Step 2"
 
         seekBar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
@@ -26,7 +27,7 @@ class SignUpStep2Activity : AppCompatActivity() {
             }
         })
 
-        val firstName = intent.getStringExtra("firstName")
-        supportActionBar?.title = "Hello $firstName"
+//        val firstName = intent.getStringExtra("firstName")
+////        supportActionBar?.title = "Hello $firstName"
     }
 }
